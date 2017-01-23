@@ -1,0 +1,45 @@
+body {
+	font-family: 'Open Sans';"Pingfang SC", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 14px;
+}
+
+.container {
+	width: 800px;
+	margin: 40px auto;
+}
+
+#ele1, #ele2 {
+	width: 100%;
+	height: 20px;
+}
+
+.a {
+	background: #004c97;
+	color: #ffffff;
+}
+
+.b {
+	background: #ffffff;
+	color: #004c97;
+}
+
+.card-type {
+	background-color: rgb(230, 126, 34);
+}
+
+.column-card {
+	padding: 6px;
+	border: 1px dotted #ccc;
+	margin: 6px 0;
+	background-color: #efefef;
+	color: #333;
+}
+
+.card-title {
+	font-weight: thin;
+	padding: 4px 0;
+}
+
+.card-owner {
+	font-style: italic;
+}
