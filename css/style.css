@@ -34,3 +34,12 @@ body {
 	background-color: #efefef;
 	color: #333;
 }
+
+.card-title {
+	font-weight: thin;
+	padding: 4px 0;
+}
+
+.card-owner {
+	font-style: italic;
+}
