@@ -30,6 +30,7 @@ body {
 	margin: 10px 0;
 	background-color: #efefef;
 	color: #333;
+	box-shadow: 0px 0px 8px #cccccc;
 }
 
 .card-title {
@@ -59,4 +60,81 @@ body {
 .container .selected {
     background-color: #dff0d8;
     color: #3c763d;
+}
+
+.timeline-item {
+	padding: 10px;
+	border: none;
+	border-left: 6px solid lightsalmon;
+	margin: 10px 0;
+	background-color: #ffffff;
+	color: #333;
+	box-shadow: 0px 0px 8px #cccccc;
+
+	max-width: 800px;
+    height: 65px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -800px 0
+    }
+    100%{
+        background-position: 800px 0
+    }
+}
+
+.animated-background {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #efefef;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 60px;
+    position: relative;
+}
+
+.background-masker {
+    background: #fff;
+    position: absolute;
+}
+
+/* Every thing below this is just positioning */
+
+.header-top {
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+}
+
+.header-first,
+.header-second,
+.header-bottom {
+	width: 100%;
+}
+
+.header-first {
+	height: 10px;
+    top: 20px;
+}
+
+.header-right {
+	width: 574px;
+	left: 200px;
+	height: 16px;
+	right: 0;
+	top: 30px;
+}
+
+.header-second {
+	height: 10px;
+    top: 40px;
+}
+
+.header-bottom {
+	bottom: 0;
 }
