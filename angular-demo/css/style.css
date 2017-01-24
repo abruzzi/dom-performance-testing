@@ -12,6 +12,17 @@ body {
 	background-color: rgb(230, 126, 34);
 }
 
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stay-time {
+	float: right;
+}
+
 .column-card {
 	padding: 10px;
 	border: none;
@@ -41,7 +52,7 @@ body {
 .container .dndPlaceholder {
     display: block;
     background-color: #fefefe;
-    min-height: 100px;
+    min-height: 90px;
     border: 1px dashed #999;
 }
 
