@@ -9,8 +9,8 @@
     },
 
     templateUrl: '/js/components/cards.html',
-    
-    controller: function ($http) {
+
+    controller: function ($http, $timeout) {
       this.cards = [];
       var self = this;
       $http.get('/data/cards.json').success(function(cards) {
