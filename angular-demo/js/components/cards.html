@@ -1,6 +1,12 @@
-<div class="container">
+<div class="container" dnd-list="$ctrl.cards" dnd-drop="drop(item, index)">
 
-    <div class="column-card" ng-repeat="item in $ctrl.cards">    
+    <div class="column-card" ng-repeat="item in $ctrl.cards"
+        dnd-draggable="item"
+        dnd-effect-allowed="move"
+        dnd-disable-if="item.stayTime < 10"
+        dnd-dragstart="drag($index)"
+        draggable="true"
+        >
         <div class="simple-card" column="column">
             <div class="overdue-alert-frame" >
             </div>

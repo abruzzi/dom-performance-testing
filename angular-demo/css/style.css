@@ -28,9 +28,10 @@ body {
 }
 
 .column-card {
-	padding: 6px;
-	border: 1px dotted #ccc;
-	margin: 6px 0;
+	padding: 10px;
+	border: none;
+	border-left: 6px solid lightsalmon;
+	margin: 10px 0;
 	background-color: #efefef;
 	color: #333;
 }
@@ -42,4 +43,24 @@ body {
 
 .card-owner {
 	font-style: italic;
+}
+
+.container, .container > .column-card {
+	position: relative;
+}
+
+.container .dndDraggingSource {
+    opacity: 0.5;
+}
+
+.container .dndPlaceholder {
+    display: block;
+    background-color: #fefefe;
+    min-height: 100px;
+    border: 1px dashed #cccccc;
+}
+
+.container .selected {
+    background-color: #dff0d8;
+    color: #3c763d;
 }
